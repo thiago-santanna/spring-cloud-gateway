@@ -5,4 +5,7 @@ spring:
         - id: hello-world
           uri: http://httpbin.org/
           predicates:
-            - Path=/get
+            - Path=/hello
+          filters:
+            - SetPath=/get
+
